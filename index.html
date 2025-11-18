@@ -3,26 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JAYESH KANDPAL - Engineering & Science Digital Portfolio</title>
+<title>JAYESH KANDPAL - Engineering & Science Portfolio</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
-h1, h2 { color: #1a237e; }
-section { background-color: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-ul { margin-left: 20px; }
-a { color: #0d47a1; text-decoration: none; }
-a:hover { text-decoration: underline; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; background-color: #f5f6fa; color: #333; }
+header { background-color: #1a237e; color: white; padding: 40px 20px; text-align: center; }
+header h1 { margin: 0; font-size: 2.5em; }
+header p { margin-top: 10px; font-size: 1.2em; color: #c5cae9; }
+
+.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+section { margin-bottom: 40px; }
+section h2 { border-bottom: 2px solid #1a237e; display: inline-block; padding-bottom: 5px; margin-bottom: 20px; }
+
+.skills ul, .achievements ul { display: flex; flex-wrap: wrap; list-style: none; padding: 0; }
+.skills li, .achievements li { background-color: #e8eaf6; padding: 10px 15px; margin: 5px; border-radius: 5px; flex: 1 1 calc(50% - 10px); }
+
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.project-card { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+.project-card:hover { transform: translateY(-5px); }
+.project-card h3 { margin-top: 0; color: #1a237e; }
+.project-card a { color: #0d47a1; text-decoration: none; }
+.project-card a:hover { text-decoration: underline; }
+
+.contact p { margin: 5px 0; }
 </style>
 </head>
 <body>
 
-<h1>JAYESH KANDPAL - Engineering & Science Digital Portfolio</h1>
+<header>
+  <h1>JAYESH KANDPAL</h1>
+  <p>PCM Student | Engineering & Science Digital Portfolio | Seeking International Undergraduate Admission</p>
+</header>
 
-<section>
+<div class="container">
+
+<section class="about">
 <h2>About Me</h2>
-<p>PCM student passionate about engineering, semiconductors, microelectronics, aerospace, petroleum engineering, quantitative finance, architecture, and physics. Seeking international undergraduate programs via direct exam or 1-year foundation pathway. Demonstrates applied skills through digital projects and simulations.</p>
+<p>PCM student passionate about engineering, semiconductors, microelectronics, aerospace, petroleum engineering, quantitative finance, architecture, and physics. I am building applied skills through digital projects and simulations to demonstrate my readiness for international undergraduate programs via direct exam or 1-year foundation pathways.</p>
 </section>
 
-<section>
+<section class="skills">
 <h2>Skills</h2>
 <ul>
 <li>Mathematics: Algebra, Calculus, Probability, Statistics, Vectors</li>
@@ -33,18 +53,36 @@ a:hover { text-decoration: underline; }
 </ul>
 </section>
 
-<section>
-<h2>Digital Projects (Free, Online)</h2>
-<ul>
-<li><strong>Microchip Simulation (Semiconductors / Microelectronics):</strong> CMOS logic gate simulation in Python + HTML visualization. <a href="#">Link</a></li>
-<li><strong>Aerospace Flight Path Calculation:</strong> Python script modeling projectile & satellite orbits. <a href="#">Link</a></li>
-<li><strong>Quantitative Finance Simulation:</strong> Monte Carlo simulation for option pricing. <a href="#">Link</a></li>
-<li><strong>Petroleum / Mining / Geoscience Visualization:</strong> 3D geological layers modeling (Python + Plotly). <a href="#">Link</a></li>
-<li><strong>Architecture / Physics Structural Analysis:</strong> Basic load & stress simulation using Python / FreeCAD. <a href="#">Link</a></li>
-</ul>
+<section class="projects">
+<h2>Digital Projects</h2>
+
+<div class="project-card">
+<h3>Microchip Simulation</h3>
+<p>CMOS logic gate simulation in Python + HTML visualization (Semiconductors / Microelectronics)</p>
+<a href="#">View Project</a>
+</div>
+
+<div class="project-card">
+<h3>Aerospace Flight Path Calculation</h3>
+<p>Python script modeling projectile & satellite orbits (Aerospace Engineering)</p>
+<a href="#">View Project</a>
+</div>
+
+<div class="project-card">
+<h3>Quantitative Finance Simulation</h3>
+<p>Monte Carlo simulation for option pricing (Quant Finance / Financial Engineering)</p>
+<a href="#">View Project</a>
+</div>
+
+<div class="project-card">
+<h3>Petroleum / Mining Visualization</h3>
+<p>3D geological layers modeling using Python + Plotly</p>
+<a href="#">View Project</a>
+</div>
+
 </section>
 
-<section>
+<section class="achievements">
 <h2>Achievements & Certifications</h2>
 <ul>
 <li>NTI / LOI Wiskunde Toets prep projects (Netherlands)</li>
@@ -54,11 +92,13 @@ a:hover { text-decoration: underline; }
 </ul>
 </section>
 
-<section>
+<section class="contact">
 <h2>Contact</h2>
-<p>Email: jayeshkandpal5@gmail.com <br>
-GitHub: <a href="https://github.com/JAYESH-KANDPAL">github.com/JAYESH-KANDPAL</a></p>
+<p>Email: jayeshkandpal5@gmail.com </p>
+<p>GitHub: <a href="https://github.com/JAYESH-KANDPAL">github.com/JAYESH-KANDPAL</a></p>
 </section>
+
+</div>
 
 </body>
 </html>
